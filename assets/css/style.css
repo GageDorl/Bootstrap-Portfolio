@@ -1,0 +1,145 @@
+    @media screen and (max-width:1920px){
+    #header{
+        text-align: center;
+        width:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        height:12%;
+        background-color:white;
+        border-bottom:solid #ddd 1px;
+    }
+
+    #name{
+        background-color:teal;
+        color:white;
+        border:0;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        height:100%;
+        width:240px;
+        margin-right:550px;
+        border-radius:0;
+        transition:0;
+        font-size:30px;
+    }
+    button{
+        height:30px;
+        border:0;
+        background-color:white;
+        border-radius:10px;
+    }
+    button:hover{
+        color:white;
+        background-color:#dddddd;
+    }
+    #current{
+        background-color:#dddddd;
+        border-radius:10px
+    }
+    h1{
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        color:teal;
+    }
+    body{
+        background-color:lightgrey;
+        background-image: url('../images/memphis-mini.png');
+        font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+        font-size:18px;
+        color:grey;
+
+    }
+    #main{
+        position:relative;
+        background-color:white;
+        width:960px;
+        margin:16vh auto;
+        border:solid black 2px;
+        border-color:#cccccc;
+        padding:10px;
+    }
+    #footer{
+        position:fixed;
+        bottom:0;
+        left:0;
+        background-color:#666666;
+        border-top:solid teal 10px;
+        width:100%;
+        height:10%;
+        font-size:10px;
+        text-align:center;
+    }
+    #profile{
+        float:left;
+        margin:15px;
+    }
+    #submit{
+        width:60px;
+        height:30px;
+        background-color:teal;
+        color:white;
+        border-radius:0;
+        margin:5px;
+    }
+    #portfol{
+        width:300px;
+        height:270px;
+        margin:20px;
+    }
+    #img1{
+        float:left;
+        position:relative;
+    }
+    #img2{
+        position:relative;
+    }
+    #imgtext1{
+        position:absolute;
+        top:200px;
+        left:20px;
+        background-color:teal;
+        width:300px;
+        height:75px;
+        color:white;
+        text-align:center;
+        vertical-align:middle;
+    }
+    #imgtext2{
+        position:absolute;
+        top:200px;
+        right:300px;
+        background-color:teal;
+        width:300px;
+        height:75px;
+        color:white;
+        text-align:center;
+        vertical-align:middle;
+    }
+    #foottext{
+        position:relative;
+        top:30px;
+    }
+    .clearfix::after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+    #current, #other{
+        transition:.7s;
+    }
+    h1{
+        font-size:36px;
+        font-weight:bold;
+        margin:24px 0;
+    }
+    p{
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+        margin-right: 0;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width:768px){
+
+}
