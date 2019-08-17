@@ -1,32 +1,79 @@
 <html>
     <head>
-        <title>Gage's Basic Portfolio Page</title>
-        <link rel=stylesheet href=assets/css/style.css>
-        
+        <title>Bootstrap Portfolio</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+            a{
+                padding:10px;
+            }
+            .navbar{
+                height:80px;
+                
+            }
+            .navbar-brand{
+                height:100%;
+                background:teal;
+                color:white; 
+                margin:0;
+                font-family:'Georgia', Times, Times New Roman, serif;
+            }
+            p{
+                color:grey;
+
+            }
+            .clear-fix{
+                content:"";
+                clear:both;
+                display:block;
+            }
+        </style>
     </head>
     <body>
-        <div id='header'>
-            
-            <button id='name'>Gage D'Orlando</button>
-            <button id='other'onclick='window.location.href="/Basic-Portfolio"' >About</button>|
-            <button id='other' onclick='window.location.href="portfolio.html"'>Portfolio</button>|
-            <button id='current' >Contact</button>
-            
-        </div>
-        <div id='main'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="padding:0;">
+            <div class=col-md-1></div><div class=col-md-10>
+  <a class="navbar-brand" href="#" style="color:white;font-size:30px;padding-top:15px;float:left">Gage D'Orlando</a>
+  
+  <div id="navbarText">
+   
+    <span class="navbar-text" style="padding-top:30px;float:center">
+      <a href=index.html>Home</a>|<a href=portfolio.html>Portfolio</a>|<a href=#>Contact</a>
+    </span>
+  </div></div>
+</nav>
+    <div class="row" >
+        <div class=col><br><br><br><br></div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 clear-fix" style="border:solid grey 1px;">
             <h1>Contact</h1>
             <hr>
-            Name
-            <br><br>
-            <input type=text value="John Smith" size=120><br><br>
-            Email
-            <br><br>
-            <input type=text value="example@gmail.com" size=120><br><br>
-            Message
-            <br><br>
-            <textarea rows=8 cols=120></textarea><br>
-            <button id=submit onclick=Submit>Submit</button>
+            <form>
+                <div class="form-group">
+                    <label for=name>Name</label>
+                    <input type=name class=form-control id=name placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type=email id=email class=form-control aria-describedby=emailHelp placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                        <label for="thistext">Message</label>
+                        <textarea class="form-control" id="thistext" rows="3"></textarea>
+                </div>
+            </form>
+            
         </div>
-        <div id='footer'><foottext>Copyright ©</foottext></div>
+    </div>
+    <div class="row">
+        <div style="background:darkgrey;position:fixed; bottom:0; left:0;width:100vw;border-top:solid teal 2px; text-align:center" class="col-md-12">
+            Copyright
+        </div>
+    </div>
+
+
     </body>
 </html>
